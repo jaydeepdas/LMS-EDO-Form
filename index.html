@@ -1,0 +1,513 @@
+<form
+    action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Df600000R1EOL"
+    method="POST"
+>
+
+    <!-- =========================================================
+         SALESFORCE CONFIGURATION
+    ========================================================== -->
+
+    <input
+        type="hidden"
+        name="oid"
+        value="00Df600000R1EOL"
+    >
+
+    <input
+        type="hidden"
+        name="retURL"
+        value="https://jaydeepdas.github.io/thank-you-page/"
+    >
+
+    <input
+        type="hidden"
+        name="lead_source"
+        value="Web"
+    >
+
+
+    <!-- =========================================================
+         PERSONAL INFORMATION
+    ========================================================== -->
+
+    <div class="divider">
+        Personal Info
+    </div>
+
+
+    <!-- First Name + Last Name -->
+
+    <div class="form-row">
+
+        <div class="form-group">
+
+            <label for="first_name">
+                First Name
+                <span class="req">*</span>
+            </label>
+
+            <div class="input-wrap">
+
+                <span class="field-icon">👤</span>
+
+                <input
+                    id="first_name"
+                    maxlength="40"
+                    name="first_name"
+                    type="text"
+                    placeholder="John"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="last_name">
+                Last Name
+                <span class="req">*</span>
+            </label>
+
+            <div class="input-wrap">
+
+                <span class="field-icon">👤</span>
+
+                <input
+                    id="last_name"
+                    maxlength="80"
+                    name="last_name"
+                    type="text"
+                    placeholder="Doe"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         EMAIL
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="email">
+            Email
+            <span class="req">*</span>
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">✉️</span>
+
+            <input
+                id="email"
+                maxlength="80"
+                name="email"
+                type="email"
+                placeholder="john@example.com"
+                required
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         MOBILE
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="mobile">
+            Mobile
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">📱</span>
+
+            <input
+                id="mobile"
+                maxlength="40"
+                name="mobile"
+                type="tel"
+                placeholder="+1 (555) 000-0000"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         COMPANY
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="company">
+            Company
+            <span class="req">*</span>
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">🏢</span>
+
+            <input
+                id="company"
+                maxlength="40"
+                name="company"
+                type="text"
+                placeholder="Acme Corp"
+                required
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         LOCATION & PRODUCT
+    ========================================================== -->
+
+    <div class="divider">
+        Location &amp; Product
+    </div>
+
+
+    <!-- =========================================================
+         STREET ADDRESS
+         Standard Salesforce Lead Address component
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="street">
+            Address
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">📍</span>
+
+            <input
+                id="street"
+                name="street"
+                type="text"
+                placeholder="123 Main Street"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         CITY
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="city">
+            City
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">🏙️</span>
+
+            <input
+                id="city"
+                maxlength="40"
+                name="city"
+                type="text"
+                placeholder="New York"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         STATE
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="state">
+            State
+            <span class="req">*</span>
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">🗺️</span>
+
+            <select
+                id="state"
+                name="state"
+                required
+            >
+
+                <option value="">
+                    -- Select State --
+                </option>
+
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         PRODUCT
+         
+         Salesforce:
+         API Name : Product__c
+         New ID   : 00Nf600000Y1TEb
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="product">
+            Product
+            <span class="req">*</span>
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">🛡️</span>
+
+            <select
+                id="product"
+                name="00Nf600000Y1TEb"
+                onchange="updateSubProducts()"
+                required
+            >
+
+                <option value="">
+                    -- Select Product --
+                </option>
+
+                <option value="Home">
+                    Home
+                </option>
+
+                <option value="Auto">
+                    Auto
+                </option>
+
+                <option value="Renters">
+                    Renters
+                </option>
+
+                <option value="Condo">
+                    Condo
+                </option>
+
+                <option value="General Liability (Commercial)">
+                    General Liability (Commercial)
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         SUB PRODUCT
+         
+         Salesforce:
+         API Name : Sub_Products__c
+         New ID   : 00Nf600000Y1TEs
+    ========================================================== -->
+
+    <div class="form-group">
+
+        <label for="subProduct">
+            Sub Product
+            <span class="req">*</span>
+        </label>
+
+        <div class="input-wrap">
+
+            <span class="field-icon">📋</span>
+
+            <select
+                id="subProduct"
+                name="00Nf600000Y1TEs"
+                required
+            >
+
+                <option value="">
+                    -- Select Sub Product --
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         SUBMIT
+    ========================================================== -->
+
+    <button type="submit">
+        Submit Lead
+    </button>
+
+</form>
+
+
+<!-- =============================================================
+     PRODUCT → SUB PRODUCT DEPENDENCY
+============================================================== -->
+
+<script>
+
+const mapping = {
+
+    "Home": [
+        "Dwelling",
+        "Other Structures",
+        "Personal Property",
+        "Personal Liability",
+        "Loss of Use"
+    ],
+
+    "Auto": [
+        "Collision",
+        "Comprehensive",
+        "Personal Injury Protection",
+        "Uninsured Motorist",
+        "Liability"
+    ],
+
+    "Renters": [
+        "Personal Property",
+        "Personal Liability",
+        "Loss of Use"
+    ],
+
+    "Condo": [
+        "Interior Coverage",
+        "Loss Assessment",
+        "Personal Property",
+        "Liability"
+    ],
+
+    "General Liability (Commercial)": [
+        "Bodily Injury",
+        "Property Damage",
+        "Personal Injury",
+        "Products Liability",
+        "Legal Liability"
+    ]
+
+};
+
+
+function updateSubProducts() {
+
+    const product =
+        document.getElementById("product").value;
+
+    const subProduct =
+        document.getElementById("subProduct");
+
+
+    /* Reset dropdown */
+
+    subProduct.innerHTML =
+        '<option value="">-- Select Sub Product --</option>';
+
+
+    /* Populate dependent values */
+
+    if (mapping[product]) {
+
+        mapping[product].forEach(item => {
+
+            const option =
+                document.createElement("option");
+
+            option.value = item;
+
+            option.textContent = item;
+
+            subProduct.appendChild(option);
+
+        });
+
+    }
+
+}
+
+</script>
